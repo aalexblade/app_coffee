@@ -29,7 +29,7 @@ const features = [
 
 export const AboutSection: FC = () => {
   return (
-    <Section id="features" className="bg-coffee-dark text-cream rounded-3xl overflow-hidden mx-4 md:mx-6">
+    <Section id="features" className="bg-coffee-dark text-cream">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
           <StaggerContainer className="lg:col-span-5 flex flex-col items-start">

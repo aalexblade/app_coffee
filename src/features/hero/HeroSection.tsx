@@ -50,7 +50,7 @@ export const HeroSection: FC = () => {
       ref={containerRef}
       onMouseMove={handleMouseMove}
       id="hero"
-      className="relative h-screen min-h-[750px] w-full flex items-center justify-center overflow-hidden bg-black"
+      className="relative h-screen min-h-[750px] w-full flex items-center justify-center bg-black"
     >
       {/* Background Layer */}
       <motion.div

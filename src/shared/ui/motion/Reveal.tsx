@@ -16,7 +16,7 @@ export const Reveal: FC<RevealProps> = ({
     <div style={{ position: 'relative', width, overflow: 'hidden' }}>
       <motion.div
         variants={{
-          hidden: { opacity: 0, y: 75 },
+          hidden: { opacity: 1, y: 0 },
           visible: { opacity: 1, y: 0 },
         }}
         initial="hidden"

@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React from 'react';
 import { cn } from '../../lib/utils';
 import { TypographyProps } from './types';
 
@@ -6,12 +6,13 @@ export interface TitleProps extends Omit<TypographyProps, 'variant'> {
   level?: 1 | 2 | 3 | 4;
 }
 
-export const Title: FC<TitleProps> = ({
+// У React 19 краще відмовитися від : FC<TitleProps> та типізувати пропси безпосередньо в аргументах
+export const Title = ({
   level = 1,
   children,
   className,
   ...props
-}) => {
+}: TitleProps) => {
   const levels = {
     1: 'text-4xl font-bold tracking-tight sm:text-6xl',
     2: 'text-3xl font-bold tracking-tight sm:text-4xl',
@@ -19,7 +20,8 @@ export const Title: FC<TitleProps> = ({
     4: 'text-xl font-bold',
   };
 
-  const Component = `h${level}` as keyof JSX.IntrinsicElements;
+  // Замінюємо keyof JSX.IntrinsicElements на безпечний React.ElementType
+  const Component = `h${level}` as React.ElementType;
 
   return (
     <Component

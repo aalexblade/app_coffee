@@ -9,7 +9,7 @@ import { StaggerContainer, FadeIn } from "../../shared/ui/motion";
 
 export const LocationSection: FC = () => {
   return (
-    <Section id="location" className="bg-coffee-dark rounded-3xl text-cream overflow-hidden mx-4 md:mx-6">
+    <Section id="location" className="bg-coffee-dark text-cream">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center">
           

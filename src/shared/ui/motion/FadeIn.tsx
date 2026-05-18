@@ -18,9 +18,9 @@ export const FadeIn: FC<FadeInProps> = ({
   return (
     <motion.div
       initial={{ 
-        opacity: 0, 
-        y: directions[direction].y, 
-        x: directions[direction].x 
+        opacity: 1, 
+        y: 0, 
+        x: 0 
       }}
       whileInView={{ opacity: 1, y: 0, x: 0 }}
       viewport={{ once: true, margin: "-100px" }}
