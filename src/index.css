@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-coffee-dark: #2c1810;
+  --color-coffee-medium: #6f4e37;
+  --color-coffee-light: #b08d57;
+  --color-cream: #f5f5dc;
+  
+  --font-serif: "Playfair Display", serif;
+}
+
+:root {
+  background-color: var(--color-cream);
+  color: var(--color-coffee-dark);
+  scroll-behavior: smooth;
+}
+
+button, 
+a, 
+select, 
+input[type="submit"], 
+input[type="button"], 
+input[type="reset"] {
+  cursor: pointer;
+}
