@@ -14,7 +14,7 @@ export const HeroActions: FC = () => {
         <AppButton 
           variant="primary" 
           size="lg"
-          className="bg-coffee-medium hover:bg-coffee-medium/80 text-black border-transparent uppercase tracking-widest text-[11px] font-bold"
+          className="uppercase tracking-widest text-[11px] font-bold"
         >
           View Menu
         </AppButton>

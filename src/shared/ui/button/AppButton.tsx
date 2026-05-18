@@ -21,9 +21,9 @@ export const AppButton = ({
 }: AppButtonProps) => {
   const variants = {
     primary:
-      "bg-coffee-dark text-cream hover:bg-coffee-medium border-transparent",
+      "bg-coffee-medium text-black hover:bg-coffee-medium/90 border-transparent",
     secondary:
-      "bg-coffee-light text-coffee-dark hover:bg-coffee-medium/20 border-transparent",
+      "bg-coffee-dark text-cream hover:bg-coffee-medium border-transparent",
     outline:
       "border-2 border-coffee-dark text-coffee-dark hover:bg-coffee-dark hover:text-cream",
     ghost:

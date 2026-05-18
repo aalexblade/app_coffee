@@ -13,7 +13,7 @@ export const StaggerContainer: FC<StaggerContainerProps> = ({
   return (
     <motion.div
       variants={{
-        hidden: { opacity: 1 },
+        hidden: { opacity: 0 },
         visible: {
           opacity: 1,
           transition: {
